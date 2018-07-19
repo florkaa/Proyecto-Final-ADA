@@ -1,0 +1,15 @@
+.breadcrumb{
+	width: 68%;
+    margin: auto;
+	margin: 16px auto;
+	padding: 0
+}
+
+.breadcrumb li {
+    display: inline-block;
+}
+
+.breadcrumb li + li:before {
+    content: " > ";
+    padding: 0 10px;
+}

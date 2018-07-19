@@ -1,0 +1,61 @@
+.container{
+	width: 68%;
+    margin: auto;
+    color: #333;
+}
+.producto{
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 32px;
+	border-radius: 5px;
+	margin: 0 auto 70px;
+}
+.prodRight{
+	width: 680px;
+}
+
+.prodLeft{
+	width: 26%;
+}
+
+.producto img{
+	width: 680px;
+}
+
+.descripcion{
+	margin-top: 70px;
+}
+
+.titleDescr{
+	font-size: 28px;
+}
+
+.info{
+	color: #999;
+	font-size: 16px;
+	padding: 32px 0;
+}
+
+.estado, .vendidos{
+	font-size: 14px;
+}
+
+.nombreProd{
+	font-size: 24px;
+	margin-top: 16px;
+}
+
+.precioProd{
+	font-size: 46px;
+	padding: 32px 0;
+}
+
+.comprar{
+	background-color: #3483FA;
+	color: #FFF;
+	width: 100%;
+	padding: 15px 0;
+    font-size: 14px;
+    border-radius: 5px;
+}

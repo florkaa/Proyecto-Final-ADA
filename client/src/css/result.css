@@ -1,0 +1,57 @@
+.resultadoBusqueda{
+	width: 68%;
+	margin: 0 auto 70px;
+	background-color: #FFF;
+	color: #333;
+	border-radius: 5px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.item{
+	display: flex;
+	align-items: flex-start;
+    margin: 0 16px;
+    padding: 16px 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.img{
+	margin-right: 16px;
+
+}
+
+.productoIMG{
+	width: 180px;
+	border-radius: 5px;
+}
+
+.descripcionBusqueda{
+	width: 60%;
+	margin-top: 14px;
+}
+
+.precio{
+	font-size: 24px;
+}
+
+.envio{
+	margin-left: 10px;
+}
+
+.envio img{
+	height: 15px;
+}
+
+.titulo{
+	font-size: 18px;
+	padding-top: 32px;
+}
+
+.ciudad{
+	font-size: 12px;
+	color: #666666;
+	margin-top: 32px;
+}
