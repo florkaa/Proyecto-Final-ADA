@@ -18,7 +18,7 @@ class Item extends Component {
     const jsonProd = await fetch(`http://localhost:3001/api/producto/${prodIDfinal}`);
     const json = await jsonProd.json();
     this.setState({ item: json[0].itemInfo, category: json[0].category });
-    console.log(this.state.category)
+    console.log(this.state.item.price[0])
   }
 
   render() {
@@ -48,7 +48,7 @@ class Item extends Component {
                   </span> )}
               </span>
               <p className="nombreProd">{this.state.item.title}</p>
-              <p className="precioProd">${this.state.item.price}</p>
+              <p className="precioProd">{this.state.item.price}</p>
               <button className="comprar">Comprar</button>
             </div>
           </div>

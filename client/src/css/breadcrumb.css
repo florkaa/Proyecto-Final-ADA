@@ -12,4 +12,5 @@
 .breadcrumb li + li:before {
     content: " > ";
     padding: 0 10px;
+    color: #999;
 }

@@ -22,7 +22,7 @@ self.search = (req, res) => {
                 item = {
                         "id": resultados[i].id,
                         "title": resultados[i].title,
-                        "price": [ resultados[i].currency_id, resultados[i].price],
+                        "price": [ resultados[i].currency_id == "ARS" ? "$" : resultados[i].currency_id, resultados[i].price],
                         "picture": resultados[i].thumbnail, 
                         "condition": resultados[i].condition, 
                         "free_shipping": resultados[i].shipping.free_shipping,
@@ -30,6 +30,7 @@ self.search = (req, res) => {
                         };
                 newData[0].items.push(item);
             } 
+            console.log(data)
             return res.json(newData);
         });
 };

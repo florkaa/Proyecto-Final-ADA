@@ -26,14 +26,15 @@ self.producto = (req, res) => {
 		                'itemInfo': {
 		                	'id': item.data.id, 
 		                	"title": item.data.title, 
-		                	"price": [item.data.currency_id, item.data.price],
-			                "picture": item.data.thumbnail, 
+		                	"price": [item.data.currency_id == "ARS" ? "$" : item.data.currency_id, item.data.price],
+			                "picture": item.data.pictures[0].url, 
 			                "condition": item.data.condition, 
 			                "free_shipping": item.data.shipping.free_shipping,
 			                "sold_quantity": item.data.sold_quantity,
 			                "description": description.data.plain_text,
 		                }
 		            }];
+		    console.log(item.data)
 			return res.json(producto)
 		});
 };

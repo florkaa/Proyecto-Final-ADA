@@ -12,7 +12,8 @@
 	margin: 0 auto 70px;
 }
 .prodRight{
-	width: 680px;
+	width: 74%;
+	padding-right: 20px;
 }
 
 .prodLeft{
@@ -20,7 +21,7 @@
 }
 
 .producto img{
-	width: 680px;
+	width: 100%;
 }
 
 .descripcion{
