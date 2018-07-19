@@ -19,7 +19,6 @@ class Result extends Component {
     const api = await fetch(`http://localhost:3001/api/items?q=${listId}`);
     const json = await api.json();
     this.setState({ results: json[0].items, filters: json[0].categories});
-    console.log(json)
   }
 
   render() {

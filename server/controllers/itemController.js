@@ -34,7 +34,6 @@ self.producto = (req, res) => {
 			                "description": description.data.plain_text,
 		                }
 		            }];
-		    console.log(item.data)
 			return res.json(producto)
 		});
 };

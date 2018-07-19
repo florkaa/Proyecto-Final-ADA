@@ -2,7 +2,6 @@ let self = {};
 
 const restler = require("restler");
 
-
 self.search = (req, res) => {
     const query = req.query["q"];
     restler
@@ -30,10 +29,10 @@ self.search = (req, res) => {
                         };
                 newData[0].items.push(item);
             } 
-            console.log(data)
             return res.json(newData);
         });
 };
+
 
 
 module.exports = self;

@@ -18,7 +18,6 @@ class Item extends Component {
     const jsonProd = await fetch(`http://localhost:3001/api/producto/${prodIDfinal}`);
     const json = await jsonProd.json();
     this.setState({ item: json[0].itemInfo, category: json[0].category });
-    console.log(this.state.item.price[0])
   }
 
   render() {
